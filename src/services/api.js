@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const KEY = "c120980454891f98e1fc45b68661d5ec";
+// const KEY = "c120980454891f98e1fc45b68661d5ec";
+const KEY = "xxxxxx API_KEY xxxxxxx";
+
 
 export default {
   getPopularMovies(pageNo) {
