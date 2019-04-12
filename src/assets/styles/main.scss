@@ -34,3 +34,58 @@
   transform: translateX(10px);
   opacity: 0;
 }
+
+.theme--light.v-text-field--box>.v-input__control>.v-input__slot,
+.theme--light.v-text-field--outline>.v-input__control>.v-input__slot {
+  border: 1px solid rgb(255, 255, 255) !important;
+  margin-bottom: unset !important;
+}
+
+.v-input .v-label {
+  height: 30px !important;
+  line-height: 30px !important;
+  top: auto !important;
+  font-size: 0.8em !important;
+  color: #fff !important;
+}
+
+.v-input__icon {
+  height: 0px !important;
+  min-width: 8px !important;
+  width: 10px !important;
+
+  .v-icon {
+    font-size: 19px !important;
+    color: #fff !important;
+  }
+}
+
+.v-text-field--box>.v-input__control>.v-input__slot,
+.v-text-field--outline>.v-input__control>.v-input__slot {
+  min-height: 10px !important;
+  height: 33px !important;
+  font-size: 12px !important;
+  color: #fff !important;
+}
+
+.v-text-field--outline input {
+  margin-top: 2px !important;
+  color: #fff !important;
+}
+
+.nav-search-field {
+  .v-text-field--box input {
+    margin-top: 2px !important;
+    color: black !important;
+  }
+
+  .v-input__icon .v-icon {
+    font-size: 19px !important;
+    color: #c4302b !important;
+  }
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
