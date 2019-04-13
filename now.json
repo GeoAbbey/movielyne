@@ -1,0 +1,10 @@
+{
+  "name": "movielyne",
+  "version": 2,
+  "alias": [
+    "movielyne"
+  ],
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ]
+}
