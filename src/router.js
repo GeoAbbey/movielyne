@@ -11,6 +11,18 @@ export default new Router({
       path: "/",
       name: "index",
       component: Home
+    },
+    {
+      path: "/movie/:id",
+      name: "movie",
+      props: true,
+      component: () => import("./views/movie.vue")
+    },
+    {
+      path: "/casts/:castId",
+      name: "casts",
+      props: true,
+      component: () => import("./views/casts.vue")
     }
   ]
 });
