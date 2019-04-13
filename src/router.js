@@ -23,6 +23,12 @@ export default new Router({
       name: "casts",
       props: true,
       component: () => import("./views/casts.vue")
+    },
+    {
+      path: "/search/:searchEntry",
+      name: "search",
+      props: true,
+      component: () => import("./views/search.vue")
     }
   ]
 });

@@ -37,7 +37,7 @@
 
       <v-list-tile class="mt-4 nav-search-field">
         <v-list-tile-content>
-          <v-text-field type="search" placeholder="Search..." single-line append-icon="search" solo box flat hide-details></v-text-field>
+          <v-text-field type="search" v-model="searchEntry" @keyup.enter="searchMovie" placeholder="Search..." single-line append-icon="search" solo box flat hide-details></v-text-field>
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
@@ -60,7 +60,7 @@
     <v-spacer v-if="this.$vuetify.breakpoint.smAndUp"></v-spacer>
 
     <span v-if="this.$vuetify.breakpoint.smAndUp" class="search-box-wrapper">
-      <v-text-field type="search" placeholder="Search..." single-line append-icon="search" outline flat hide-details></v-text-field>
+      <v-text-field type="search" v-model="searchEntry" @keyup.enter="searchMovie" placeholder="Search..." single-line append-icon="search" outline flat hide-details></v-text-field>
     </span>
   </v-toolbar>
 
@@ -92,10 +92,16 @@
 </style>
 
 <script>
+import Home from "./views/index";
+
 export default {
   name: "App",
+  components: {
+    Home
+  },
   data() {
     return {
+      searchEntry: '',
       sideNav: {
         model: false,
         type: "persistent",
@@ -106,6 +112,12 @@ export default {
         scrolled: false
       }
     };
-  }
+  },
+  methods: {
+    searchMovie() {
+      this.$router.push('/search/' + this.searchEntry)
+      this.searchEntry = ''
+    }
+  },
 };
 </script>
