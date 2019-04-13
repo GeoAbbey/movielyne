@@ -1,3 +1,4 @@
+// ******************* Scrollbar style customization *******************
 * {
   &::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(44, 48, 73, 0.3);
@@ -20,7 +21,10 @@
     -moz-background-color: #c4302b !important;
   }
 }
+// ******************* End of Scrollbar style customization *******************
 
+
+// ******************* Transition *******************
 .slide-fade-enter-active {
   transition: all 0.7s ease;
 }
@@ -34,6 +38,10 @@
   transform: translateX(10px);
   opacity: 0;
 }
+// ******************* End of Transition *******************
+
+
+// ******************* Vuetify style customization *******************
 
 .theme--light.v-text-field--box>.v-input__control>.v-input__slot,
 .theme--light.v-text-field--outline>.v-input__control>.v-input__slot {
@@ -84,6 +92,7 @@
     color: #c4302b !important;
   }
 }
+// ******************* End of Vuetify style customization *******************
 
 a {
   text-decoration: unset;
