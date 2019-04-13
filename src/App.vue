@@ -16,7 +16,7 @@
       <v-list-tile>
         <v-list-tile-action>
           <router-link class="primary--text" to="/trending">
-            <v-icon class="primary--text">info</v-icon>
+            <v-icon class="primary--text">shop_two</v-icon>
           </router-link>
         </v-list-tile-action>
         <v-list-tile-content>
@@ -27,7 +27,7 @@
       <v-list-tile>
         <v-list-tile-action>
           <router-link class="primary--text" to="/popular">
-            <v-icon class="primary--text">info</v-icon>
+            <v-icon class="primary--text">stars</v-icon>
           </router-link>
         </v-list-tile-action>
         <v-list-tile-content>
