@@ -8,7 +8,7 @@ Check it [here](https://movielyne.now.sh/).
 npm install
 ```
 ## API KEY
-The app is connected to The Movie Database (TMDb) API.So, to successfully run the application, you need to register on the TMDb platform to obtain your API KEY and use in the KEY section of ```src/services/api.js```
+The app is connected to The Movie Database (TMDb) API. So, to successfully run the application, you need to register on the TMDb platform to obtain your API KEY and use in the KEY section of ```src/services/api.js```
 ```
 const KEY = "xxxxxx API_KEY xxxxxxx";
 ```
