@@ -15,23 +15,23 @@
 
       <v-list-tile>
         <v-list-tile-action>
-          <router-link class="primary--text" to="#">
+          <router-link class="primary--text" to="/trending">
             <v-icon class="primary--text">info</v-icon>
           </router-link>
         </v-list-tile-action>
         <v-list-tile-content>
-          <router-link class="primary--text font-weight-bold" to="#">Trending</router-link>
+          <router-link class="primary--text font-weight-bold" to="/trending">Trending</router-link>
         </v-list-tile-content>
       </v-list-tile>
 
       <v-list-tile>
         <v-list-tile-action>
-          <router-link class="primary--text" to="#">
+          <router-link class="primary--text" to="/popular">
             <v-icon class="primary--text">info</v-icon>
           </router-link>
         </v-list-tile-action>
         <v-list-tile-content>
-          <router-link class="primary--text font-weight-bold" to="#">Popular</router-link>
+          <router-link class="primary--text font-weight-bold" to="/popular">Popular</router-link>
         </v-list-tile-content>
       </v-list-tile>
 
@@ -45,8 +45,8 @@
 
   <v-toolbar flat app class="primary white--text">
     <v-toolbar-title v-if="this.$vuetify.breakpoint.smAndUp" class="body-2 font-weight-black">
-      <router-link to="#" class="white--text">TRENDING</router-link>
-      <router-link to="#" class="white--text ml-4">POPULAR</router-link>
+      <router-link to="/trending" class="white--text">TRENDING</router-link>
+      <router-link to="/popular" class="white--text ml-4">POPULAR</router-link>
     </v-toolbar-title>
 
     <v-spacer v-if="this.$vuetify.breakpoint.smAndUp"></v-spacer>

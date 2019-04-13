@@ -13,6 +13,16 @@ export default new Router({
       component: Home
     },
     {
+      path: "/trending",
+      name: "trending",
+      component: () => import("./views/trending.vue")
+    },
+    {
+      path: "/popular",
+      name: "popular",
+      component: () => import("./views/popular.vue")
+    },
+    {
       path: "/movie/:id",
       name: "movie",
       props: true,
