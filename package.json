@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A Movie Application",
   "author": "Ismail Olasunkanmi",
+  "email": "olasunkanmiismail2@gmail.com",
   "scripts": {
     "now-build": "vue-cli-service build",
     "serve": "vue-cli-service serve",

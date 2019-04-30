@@ -28,3 +28,6 @@ npm run build
 ```
 npm run lint
 ```
+
+### Contact Information
+Should you have any question regarding this project, kindly reach me via email ```olasunkanmiismail2@gmail.com```
