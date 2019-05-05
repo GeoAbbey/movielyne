@@ -30,5 +30,6 @@ npm run lint
 ```
 
 ### Contact Information
-Should you have any question regarding this project, kindly reach me via email ```olasunkanmiismail2@gmail.com```
+Should you have any question regarding this project, kindly reach me via email ```olasunkanmiismail2@gmail.com```.
+
 You can also join the community via http://bit.ly/opensource-nigeria
