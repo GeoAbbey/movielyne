@@ -1,7 +1,7 @@
 <template>
 <section>
 <v-sheet class="grey lighten-3">
-  <v-container v-if="cast" grid-list-lg>
+  <v-container class="my-container" v-if="cast" grid-list-lg>
     <v-layout row wrap>
       <v-flex sm4 class="">
         <v-img v-if="cast.profile_path != null" class="poster mx-auto" contain :lazy-src="`http://image.tmdb.org/t/p/w92/${cast.profile_path}`" :src="`http://image.tmdb.org/t/p/w342/${cast.profile_path}`"></v-img>
@@ -54,7 +54,7 @@
   </v-container>
 </v-sheet>
 
-<v-container grid-list-lg>
+<v-container class="my-container" grid-list-lg>
   <div class="title font-weight-bold white--text mb-2">ASSOCIATED MOVIES</div>
   <MovieCard :movies="associatedMovies" />
 </v-container>

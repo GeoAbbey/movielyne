@@ -21,6 +21,15 @@ export default {
       });
   },
 
+  // Fetch now playing movies
+  getNowPlaying(pageNo) {
+    return axios
+      .get(`/movie/now_playing?api_key=${KEY}&page=${pageNo}`)
+      .then(response => {
+        return response.data;
+      });
+  },
+
   // Fetch a single movie and its details
   getSingleMovie(id) {
     return axios.get(`/movie/${id}?api_key=${KEY}`).then(response => {

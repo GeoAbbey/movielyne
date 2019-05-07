@@ -7,7 +7,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     popularMovies: [],
-    trendingMovies: []
+    trendingMovies: [],
+    nowPlaying: []
   },
 
   mutations: {
@@ -17,6 +18,10 @@ export default new Vuex.Store({
 
     SET_TRENDING_MOVIES(state, payload) {
       state.trendingMovies = payload;
+    },
+
+    SET_NOW_PLAYING(state, payload) {
+      state.nowPlaying = payload;
     }
   },
 
@@ -33,6 +38,14 @@ export default new Vuex.Store({
       return MoviesApi.getTrendingMovies(pageNo)
         .then(movies => {
           commit("SET_TRENDING_MOVIES", movies);
+        })
+        .catch(err => console.log(err));
+    },
+
+    GET_NOW_PLAYING({ commit }, pageNo) {
+      return MoviesApi.getNowPlaying(pageNo)
+        .then(movies => {
+          commit("SET_NOW_PLAYING", movies);
         })
         .catch(err => console.log(err));
     }

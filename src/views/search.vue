@@ -1,5 +1,5 @@
 <template>
-<v-container grid-list-lg>
+<v-container class="my-container" grid-list-lg>
   <div v-if="noMovie" class="text-xs-center white--text title mt-5">Movie titled {{ searchEntry }} not found</div>
   <MovieCard v-else :movies="moviesFound" />
 </v-container>

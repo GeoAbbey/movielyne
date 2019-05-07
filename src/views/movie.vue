@@ -2,7 +2,7 @@
 <section>
   <section v-if="movie !== null">
     <v-img class="backdrop" :src="`http://image.tmdb.org/t/p/original/${movie.backdrop_path}`" :lazy-src="`http://image.tmdb.org/t/p/w92/${movie.backdrop_path}`" cover>
-      <v-container grid-list-lg>
+      <v-container class="my-container" grid-list-lg>
         <v-layout row wrap>
           <v-flex sm4>
             <v-img class="poster mx-auto" :lazy-src="`http://image.tmdb.org/t/p/w92/${movie.poster_path}`" :src="`http://image.tmdb.org/t/p/w342/${movie.poster_path}`"></v-img>
@@ -52,7 +52,7 @@
     </v-img>
   </section>
 
-  <v-container grid-list-lg>
+  <v-container class="my-container" grid-list-lg>
     <div class="title font-weight-bold white--text mb-2 mt-4">TOP BILLED CASTS</div>
     <v-layout v-if="credits !== null" row wrap mt-4>
       <v-flex xs6 sm3 lg2 v-for="cast in topCasts" :key="cast.id">

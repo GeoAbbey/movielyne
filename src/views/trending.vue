@@ -1,5 +1,5 @@
 <template>
-<v-container v-if="trendingMovies.results" grid-list-lg>
+<v-container class="my-container" v-if="trendingMovies.results" grid-list-lg>
   <div class="title font-weight-bold white--text mb-2">TRENDING MOVIES</div>
   <MovieCard :movies="trendingMovies.results" />
 
