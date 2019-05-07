@@ -59,7 +59,7 @@
         <v-sheet @click="getCast(cast.id)" class="profile-wrapper white">
           <v-img v-if="cast.profile_path != null" max-height="220" class="profile-image" :lazy-src="`http://image.tmdb.org/t/p/w92/${cast.profile_path}`" :src="`http://image.tmdb.org/t/p/w342/${cast.profile_path}`"></v-img>
 
-          <v-sheet min-height="200" class="text-xs-center profile-image" v-else>
+          <v-sheet min-height="220" class="text-xs-center profile-image" v-else>
             <v-icon size="100" class="mt-5">account_circle</v-icon>
           </v-sheet>
 
